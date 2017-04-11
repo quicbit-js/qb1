@@ -1,7 +1,5 @@
 # qb1
 
-qb1 is a data format and set of tools that make working with data more productive and efficient.
-
     The speed of binary,
         the transparency of text,
             the compactness of compression,
