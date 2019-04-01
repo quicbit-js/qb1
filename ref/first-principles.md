@@ -26,7 +26,7 @@ of text?
 
 We use first principles to guide the construction of this qb1 format/serialization/storage/search:
 
-## Principle: Smallest Serialization Unit is 8-bits
+## Principle: Smallest serialization unit is 8-bits
 
 12-bit data and architecture faded away in the 70s and eking out single bit savings cramming a few 
 5-bit words into 2 bytes is not very effective.  Our smallest unit of serialization is 8-bits.  
@@ -54,21 +54,21 @@ In order to specify rules that apply to data structures, there must be a way to 
 selections of data.  Therefore qb1 must have an means of specifying selections (e.g.
 similar to xpath for XML).
 
-## Principle: Data is Self-Described
+## Principle: Data is self-described
 
 Self-described data improves clarity, search, scanning and
 data recovery.  The cost of self-described data can be made minimal
 by using higher structural descriptions.  By allowing redundant structures to be described 
 qb1 actually improves compression over conventional byte-level compression.
 
-### Corollary: A Description Precedes Every Value
+### Corollary: A description precedes every value
 
 Every value in qb1 is preceded by a description of that value.  ***Note that this does not mean 
 that every scalar value is preceded by a token***.  A vector (array) can be preceded by a description
 of a vector and the possible type(s) of that vector.  For large vectors holding only a single type, 
 this can considerably reduce storage overhead.
 
-### Corollary: Complex Types and Patterns Are Describable
+### Corollary: Complex types and patterns are describable
 
 qb1 supports descriptions of complex types such as objects, arrays and any nesting complexity.  qb1
 uses a concise syntax for describing data (this same corollary also falls from the human-readability principle)
