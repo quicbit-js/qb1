@@ -8,7 +8,7 @@
 
 ## Overview
 
-A new data distribution and storage technology that simplifies and improves management of data sets.  
+qb1 is a distribution and storage technology that simplifies and improves management of data sets.  
 The technology improves reliability, speed and reduces costs of storage and processing large volumes of data.
 
 qb1 is actually three technologies in one:
