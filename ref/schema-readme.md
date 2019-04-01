@@ -3,7 +3,7 @@
 The use of "$type" here isn't really correct.  "$type" : "string" is already used 
 for *values* so it is confusing to use it as a type definition just because we are in type context.
 
-see "type-values.md" for the new thinking on this.
+see "complex-types.md" for the new thinking on this.
 
 
 
